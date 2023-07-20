@@ -41,7 +41,7 @@ The `example_contamination.yaml` file is the basic runcard for the contaminated 
 - Launch vp-rebuild-data to build the correct commondata.
 - Remove the runcard containing the SMEFT C-factors, and replace it with a SM runcard.
 
-After this, the pipeline is identical to a normal NNPDF fit. Run `n3fit`, `evolven3fit` and `postfit` as described [here].(https://docs.nnpdf.science/tutorials/run-fit.html)).
+After this, the pipeline is identical to a normal NNPDF fit. Run `n3fit`, `evolven3fit` and `postfit` as described [here](https://docs.nnpdf.science/tutorials/run-fit.html)).
 
 ## 3. Analysing contaminated fits
 The code for analysing contaminated fits is contained in the analysis_code folder. Run the code via the command:
