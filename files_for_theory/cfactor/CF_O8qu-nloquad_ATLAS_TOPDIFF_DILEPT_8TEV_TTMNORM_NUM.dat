@@ -1,0 +1,15 @@
+*******************************************************************************************
+SetName: ATLAS_TOPDIFF_DILEPT_8TEV_TTMNORM
+Author: Luca Mantani (luca.mantani@maths.cam.ac.uk)
+Date: 2022
+CodesUsed: Mathematica
+PDFset: NNPDF40_nnlo_as_0118
+Operator: O8qu^2
+Coefficient: 1
+********************************************************************************************
+9.99221e-01 0.0
+9.99558e-01 0.0
+1.00035e+00 0.0
+1.00206e+00 0.0
+1.00532e+00 0.0
+1.01869e+00 0.0

@@ -1,0 +1,13 @@
+dataset_label: "HL-LHC HM DY 14 TeV - neutral current - electron channel"
+x: k2
+x_label: '$m_{\ell\ell}$ (GeV)'
+y_label: '$d\sigma/dM_{ee}$ (pb)'
+y_scale: log
+kinematics_override: ewk_mll_sqrt_scale
+
+experiment: "HLLHC"
+
+normalize:
+    y_scale: linear
+
+nnpdf31_process: DY

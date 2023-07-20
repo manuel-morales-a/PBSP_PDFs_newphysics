@@ -1,0 +1,23 @@
+*******************************************************************************************
+SetName: Zpquad_ATLASZHIGHMASS49FB
+Author: Luca Mantani (luca.mantani@maths.cam.ac.uk)
+Date: 2022
+CodesUsed: Mathematica
+PDFset: NNPDF40_nnlo_as_0118
+Operator: linear
+Coefficient: 1
+Notes: The coefficient corresponds to g^2/M^2 of the Zp model.
+********************************************************************************************
+1.00128e+00 0.0
+1.00297e+00 0.0
+1.00668e+00 0.0
+1.01284e+00 0.0
+1.02220e+00 0.0
+1.03560e+00 0.0
+1.05399e+00 0.0
+1.09812e+00 0.0
+1.26945e+00 0.0
+1.81227e+00 0.0
+3.47995e+00 0.0
+1.09401e+01 0.0
+4.42256e+01 0.0

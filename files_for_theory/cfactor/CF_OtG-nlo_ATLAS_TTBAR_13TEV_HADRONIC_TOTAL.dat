@@ -1,0 +1,10 @@
+*******************************************************************************************
+SetName: ATLAS_TTBAR_13TEV_HADRONIC_TOTAL
+Author: Luca Mantani (luca.mantani@maths.cam.ac.uk)
+Date: 2022
+CodesUsed: madgraph
+PDFset: NNPDF40_nnlo_as_0118
+Operator: OtG
+Coefficient: 1
+********************************************************************************************
+1.271654e+00 0.0

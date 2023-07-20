@@ -1,0 +1,13 @@
+dataset_label: "HL DY 7TeV"
+x: k2
+x_label: "$M$ (GeV)"
+y_label: '$d\sigma/dM$ (pb/GeV)'
+y_scale: log
+kinematics_override: ewk_mll_sqrt_scale
+
+experiment: "HLLHC"
+
+normalize:
+    y_scale: linear
+
+nnpdf31_process: DY

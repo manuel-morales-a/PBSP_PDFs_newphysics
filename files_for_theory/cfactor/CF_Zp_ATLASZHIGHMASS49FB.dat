@@ -1,0 +1,23 @@
+*******************************************************************************************
+SetName: Zplin_ATLASZHIGHMASS49FB
+Author: Luca Mantani (luca.mantani@maths.cam.ac.uk)
+Date: 2022
+CodesUsed: Mathematica
+PDFset: NNPDF40_nnlo_as_0118
+Operator: linear
+Coefficient: 1
+Notes: The coefficient corresponds to g^2/M^2 of the Zp model.
+********************************************************************************************
+9.65752e-01 0.0
+9.50011e-01 0.0
+9.21203e-01 0.0
+8.84687e-01 0.0
+8.41801e-01 0.0
+7.93159e-01 0.0
+7.39065e-01 0.0
+6.40233e-01 0.0
+3.88181e-01 0.0
+-9.72467e-02 0.0
+-9.28881e-01 0.0
+-2.90983e+00 0.0
+-7.21487e+00 0.0

@@ -1,0 +1,14 @@
+*******************************************************************************************
+SetName: ATLAS_TTB_DIFF_8TEV_LJ_TTRAPNORM
+Author: Luca Mantani (luca.mantani@maths.cam.ac.uk)
+Date: 2022
+CodesUsed: Mathematica
+PDFset: NNPDF40_nnlo_as_0118
+Operator: O8qu
+Coefficient: 1
+********************************************************************************************
+9.96340e-01 0.0
+9.97237e-01 0.0
+9.98950e-01 0.0
+1.00184e+00 0.0
+1.00866e+00 0.0
