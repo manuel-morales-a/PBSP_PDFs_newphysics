@@ -4,7 +4,7 @@ This repo contains the code, files, and runcards required to reproduce and analy
 # Instructions
 
 ## 1. Install NNPDF4.0
-Our analysis makes use of the NNPDF4.0 methoolodgy ([arXiv:2109.02653](https://arxiv.org/abs/2109.02653), [arXiv:2109.02671](https://arxiv.org/abs/2109.02671)), so make sure to install it first by following the instructions given in [this link](https://docs.nnpdf.science/get-started/installation.html).
+Our analysis makes use of the NNPDF4.0 methoolodgy ([arXiv:2109.02653](https://arxiv.org/abs/2109.02653), [arXiv:2109.02671](https://arxiv.org/abs/2109.02671)), so make sure to install it first by following the instructions given in [here](https://docs.nnpdf.science/get-started/installation.html).
 
 ## 2. Running contaminated fits
 ### Preparing data and theory predictions
