@@ -1,0 +1,76 @@
+meta:
+    title: Contaminated bounds on HLLHC data
+    author: James Moore
+    keywords: [smeft]
+
+# The datasets on which bounds will be computed
+dataset_inputs:
+  - {dataset: HLLHC_HMDY_NC_EL_FINAL, frac: 1.0, cfac: [QCD, EWK, "Y"]}
+  - {dataset: HLLHC_HMDY_NC_MU_FINAL, frac: 1.0, cfac: [QCD, EWK, "Y"]}
+  - {dataset: HLLHC_HMDY_CC_EL_FINAL, frac: 1.0, cfac: [QCD, EWK, "Y"]}
+  - {dataset: HLLHC_HMDY_CC_MU_FINAL, frac: 1.0, cfac: [QCD, EWK, "Y"]}
+
+# The BSM contamination that will affect the above datasets
+write_cfactors_data:
+  - {name: "Y", new_value: 0, default_value: -0.001, quad_on: False}
+
+# The underlying PDF which will be used to generate the 'God-given' pseudodata
+# This should be the same as in the original fit 
+underlying_law: NNPDF31_nnlo_as_0118
+
+# The type of pseudodata generation used. If nnpdf_defafult is chosen, it will simply
+# use errors from the experimental covariance matrix already found in NNPDF without 
+# any modification. If from_commondata is chosen, the underlying_law will be ignored
+# and the commondata file stored in NNPDF will be used *without* any pseuedodata 
+# generation on top (this is meant to simulate using actual experimental data where
+# appropriate).
+pseudodata_generation: maeve_hllhc_lumi
+pseudodata_generation_data:
+  seed: 0
+  type: gaussian  # Should be chosen from gaussian or uniform currently.
+  std_devs: 1
+
+brazil_repeats: 10
+
+# The fit here is unimportant, validphys just needs to know where it can read the
+# commondata kinematics, etc, from for the plots.
+use_fitcommondata: False
+fit: NNPDF40_nlo_as_01180
+
+# The benchmark points which will be scanned to build a chi2 surface when
+# constructing the bounds
+bounds_benchmark_points:
+  - {"Y": -0.001}
+  - {"Y": -0.0005}
+  - {"Y": 0}
+  - {"Y": 0.0005}
+  - {"Y": 0.001}
+
+# The fitted PDF which we use in making theory predictions, to compare to the
+# pseudodata. This is the one which has been contaminated.
+pdf: PDF4EFT_baseline_incHLLHC
+
+use_cuts: internal
+theoryid: 53
+
+template_text: |
+  # Info
+  {@info_splash@}
+  # Bounds
+  {@bounds_table@}
+  # Brazilian bounds
+  {@brazil_bounds@}
+  # Data-theory comparison
+  ## Absolute
+  {@plot_fancy_data_theory_comparison@}
+  ## Ratio to data
+  {@plot_fancy_ratio_data_theory_comparison@}
+  # Pseudodata
+  {@pseudodata_table@}
+  # Theory predictions
+  {@theory_predictions_table@}
+  # 'Experimental' covariance matrix
+  {@bounds_covmat@}
+
+actions_:
+  - report(main=True)
