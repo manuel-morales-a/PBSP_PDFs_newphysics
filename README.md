@@ -1,5 +1,5 @@
 # PBSP_PDFs_newphysics
-This repo contains the code, files, and runcards required to reproduce and analyse the PDF fits in the presence of New Physics presented in [insert arxiv reference]. 
+This repo contains the code, files, and runcards required to reproduce and analyse the PDF fits in the presence of New Physics presented in [arXiv:2307.10370](https://arxiv.org/pdf/2307.10370.pdf). 
 
 # Instructions
 
